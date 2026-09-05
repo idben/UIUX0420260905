@@ -1,0 +1,7 @@
+button{
+  background-color: #e35858;
+  color: #fff;
+  @media (width > 800px) {
+    background-color: #2f52ee;
+  }
+}

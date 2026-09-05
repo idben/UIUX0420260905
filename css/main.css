@@ -8,9 +8,17 @@ body {
   color: #3e3e3e;
 }
 
+button {
+  background-color: #ec7a7a;
+}
 button:hover {
   opacity: 0.8;
 }
 button.active {
   background-color: #3e3e3e;
+}
+@media (width > 800px) {
+  button {
+    background-color: #2228d3;
+  }
 }/*# sourceMappingURL=main.css.map */

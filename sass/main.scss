@@ -17,10 +17,14 @@ body{
 }
 
 button{
+  background-color: #ec7a7a;
   &:hover{
     opacity: 0.8;
   }
   &.active{
     background-color: $main-color;
+  }
+  @media (width > 800px) {
+    background-color: #2228d3;
   }
 }
