@@ -1,4 +1,11 @@
 @use "variables" as *;
+@use "sass:list";
+
+@mixin btn_setting($r){
+  width: 100px;
+  height: 50px;
+  border-radius: $r;
+}
 
 body{
   color: $main-color;
@@ -17,6 +24,7 @@ body{
 }
 
 button{
+  @include btn_setting(10px);
   background-color: #ec7a7a;
   &:hover{
     opacity: 0.8;
@@ -27,4 +35,17 @@ button{
   @media (width > 800px) {
     background-color: #2228d3;
   }
+}
+
+@for $i from 0 to 5{
+  $size: 10 + ($i * 2);
+  .fz-#{$size}px{
+    font-size: #{$size}px;
+  }
+}
+
+$size: 10px 20px 30px 40px;
+
+.box{
+  padding: list.nth($size, 4);
 }
