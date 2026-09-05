@@ -1,0 +1,20 @@
+body
+  position: relative
+  &::after
+    content: "ES"
+    color: #ec0a0a
+    font-size: 60px
+    font-weight: bold
+    position: absolute
+    right: 0
+    top: 0
+    @media (width >= 576px)
+      content: "SM"
+    @media (width >= 768px)
+      content: "MD"
+    @media (width >= 992px)
+      content: "LG"
+    @media (width >= 1200px)
+      content: "XL"
+    @media (width >= 1400px)
+      content: "XXL"
